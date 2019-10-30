@@ -1,9 +1,23 @@
 {
   "name": "rt-storage",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "main": "build/index.js",
   "license": "MIT",
-  "repository": "https://github.com/embbnux/rt-storage.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/embbnux/rt-storage.git"
+  },
+  "homepage": "https://github.com/embbnux/rt-storage#readme",
+  "keywords": [
+    "storage",
+    "realtime",
+    "multi-tabs",
+    "rxjs",
+    "localforage",
+    "javascript",
+    "library",
+    "typescript"
+  ],
   "scripts": {
     "prepublish": "tsc && webpack",
     "tsc": "tsc",
@@ -22,6 +36,6 @@
   "dependencies": {
     "localforage": "^1.7.3",
     "rxjs": "^6.4.0",
-    "uuid": "^3.3.2"
+    "uuid": "^3.3.3"
   }
 }

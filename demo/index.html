@@ -15,9 +15,10 @@
 <body>
 <script src="https://unpkg.com/localforage@1.7.3/dist/localforage.js"></script>
 <script src="https://unpkg.com/rxjs@6.4.0/bundles/rxjs.umd.min.js"></script>
+<script src="https://wzrd.in/standalone/uuid%2Fv4@latest"></script>
 <script src="../build/index.js"></script>
 <script>
-  window.storage = new RCStorage({ name: 'testdb' });
+  window.storage = new RTStorage({ name: 'testdb' });
 
   window.storage.subscribe(function(changed) {
     console.dir(changed);

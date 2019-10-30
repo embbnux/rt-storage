@@ -1,4 +1,4 @@
-import { v4 } from 'uuid';
+import * as uuidv4 from 'uuid/v4';
 import * as localForage from 'localforage';
 import { Subject } from 'rxjs';
 
@@ -14,7 +14,7 @@ export default class RTStorage {
 
   constructor({ name, ...option }) {
     this._name = name;
-    this._id = v4();
+    this._id = uuidv4();
     localForage.config({ name: this._name, ...option });
     this._storage = localForage.createInstance({
       name: this._name,
